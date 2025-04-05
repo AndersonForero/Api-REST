@@ -2,9 +2,11 @@ const express = require("express");
 const crypto = require("node:crypto");
 const movies = require("./movies.json"); // commonJS permite obtener JSON
 const { validateMovie, validateParcialMovie } = require("./schemas/movies");
+const cors = require("cors");
 
 const app = express();
 app.use(express.json()); // Transformar JSON recibido a js
+app.use(cors());
 app.disable("x-powered-by"); // Desabilitar header x-Powered-By: Express
 
 app.get("/", (req, res) => {
