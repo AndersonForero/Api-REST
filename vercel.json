@@ -1,14 +1,1 @@
-{ 
-    "version": 2, 
-    "builds": [
-        { 
-            "src": "app.js"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-    ]
-}
+{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/api" }] }
