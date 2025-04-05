@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json()); // Transformar JSON recibido a js
 app.disable("x-powered-by"); // Desabilitar header x-Powered-By: Express
 
-app.get("/movies", (req, res) => {
+app.get("/", (req, res) => {
     // res.send(req.query.genre);
     res.header("Access-Control-Allow-Origin", "*");
 
