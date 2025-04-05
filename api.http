@@ -1,0 +1,23 @@
+GET http://localhost:3000/movies?genre=action
+
+### Crear pelicula
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "duration": 5,
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVKqXZO3LCGt6-dgtVGTMXKZA1Z4vJMhvEAA&s",
+    "director": "Joustin Beaber",
+    "genre": ["Drama", "Action"],
+    "title": "Oso polar nocturno",
+    "year": 2011
+}
+
+### Actualizar peliula
+PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "duration": 5,
+    "year": 2011
+}
