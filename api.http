@@ -1,4 +1,4 @@
-GET http://localhost:3000/movies?genre=action
+GET https://api-rest-456.vercel.app/
 
 ### Crear pelicula
 POST http://localhost:3000/movies
