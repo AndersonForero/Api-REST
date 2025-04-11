@@ -1,7 +1,7 @@
 GET https://api-rest-456.vercel.app/
 
 ### Crear pelicula
-POST http://localhost:3000/movies
+POST https://api-rest-456.vercel.app/movies
 Content-Type: application/json
 
 {
