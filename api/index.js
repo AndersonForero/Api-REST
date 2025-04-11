@@ -1,7 +1,7 @@
 const express = require("express");
 const crypto = require("node:crypto");
-const movies = require("./movies.json"); // commonJS permite obtener JSON
-const { validateMovie, validateParcialMovie } = require("./schemas/movies");
+const movies = require("../movies.json"); // commonJS permite obtener JSON
+const { validateMovie, validateParcialMovie } = require("../schemas/movies");
 const cors = require("cors");
 
 const app = express();
