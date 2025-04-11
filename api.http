@@ -1,4 +1,4 @@
-GET https://api-rest-456.vercel.app/
+GET https://api-rest-456.vercel.app/movies?genre=action
 
 ### Crear pelicula
 POST https://api-rest-456.vercel.app/movies
@@ -14,7 +14,7 @@ Content-Type: application/json
 }
 
 ### Actualizar peliula
-PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH https://api-rest-456.vercel.app/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
 Content-Type: application/json
 
 {
